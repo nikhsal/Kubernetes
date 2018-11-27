@@ -1,0 +1,22 @@
+{
+   "apiVersion": "v1",
+   "kind": "Pod",
+   "metadata": {
+                 "name": "mysecondwebapp",
+                 "labels": {
+                             "app": "web"
+                           }
+               },
+    "spec": {
+       "containers": [{
+                       "name": "ctr22",
+                       "image": "tomcat",
+                       "ports": [{
+                                  "containerPort": 8080
+                                 }]
+                      }] 
+
+    }
+}
+
+
